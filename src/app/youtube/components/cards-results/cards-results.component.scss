@@ -1,0 +1,13 @@
+.container {
+  margin: 30px auto 0;
+  max-width: 880px;
+}
+.search-result{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+li{
+  list-style: none;
+}

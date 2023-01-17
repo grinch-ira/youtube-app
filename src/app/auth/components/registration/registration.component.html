@@ -1,0 +1,39 @@
+<div class="registration-wrapper">
+  <h4 class="registration-title">Registration</h4>
+
+  <form class="registration-form">
+    <div class="registration-form__section">
+      <label>Login</label>
+      <input
+      class="registration-form__input"
+      type="text"
+      #regFirstName >
+    </div>
+
+    <div class="registration-form__section">
+      <label>Email</label>
+      <input
+      class="registration-form__input"
+      type="email"
+      #regMail>
+    </div>
+
+    <div class="registration-form__section">
+      <label>password</label>
+      <input
+      class="registration-form__input"
+      type="password"
+      #regPassword>
+    </div>
+  </form>
+  <div class="registration-buttons">
+    <button
+    mat-raised-button
+    color="primary"
+    (click)="handleRegister(regFirstName, regMail, regPassword)"
+    >Registration</button>
+    <button mat-button color="primary" routerLink="../">
+      Login
+    </button>
+  </div>
+</div>

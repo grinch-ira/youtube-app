@@ -1,0 +1,62 @@
+@import '../../../../variables.scss';
+
+.header {
+  min-width: 100%;
+}
+
+.header-wrapper {
+  height: 100%;
+  background-color: $background-color-gray;
+  display: grid;
+  grid-template-columns: .5fr 2.5fr .5fr;
+  grid-template-areas: ". search user-icon";
+  padding: 25px;
+}
+
+.search {
+  grid-area: search;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__panel {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-search-input {
+  min-width: 250px;
+  margin-left: 10px;
+}
+
+.header-search-btn {
+  margin-right: 25px;
+  min-width: 80px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.header-setting-btn {
+  min-width: 30px;
+  height: 30px;
+  padding: 0;
+  align-items: center;
+}
+
+.user-icon {
+  grid-area: user-icon;
+  display: flex;
+  align-items: center;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__name {
+    margin-right: 25px;
+  }
+}

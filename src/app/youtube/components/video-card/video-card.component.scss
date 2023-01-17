@@ -1,0 +1,47 @@
+@import '../../../../variables.scss';
+
+.card-wrapper {
+  width: 270px;
+  height: 340px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $background-color-gray;
+  border-radius: 5px;
+  border-bottom: 10px solid ;
+  padding: 20px;
+  box-sizing: border-box;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card-statistics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-count {
+  display: flex;
+  align-items: center;
+}
+
+.video-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.card-button {
+  margin: 0 auto;
+}
+
+.card-button__more {
+  width: 120px;
+}
+.time-detection{
+  height: 10px;
+}

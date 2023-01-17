@@ -1,0 +1,31 @@
+<div>
+  <div
+   class="card-wrapper"
+   [appDateStatus]="item.snippet.publishedAt">
+    <img class="card__image" [src]="imageUrl" alt="youtube">
+    <div class="card-statistics">
+      <div class="card-count card-view"><span class="material-symbols-outlined">
+          visibility
+        </span>{{viewCount}}</div>
+      <div class="card-count card-like"><span class="material-symbols-outlined">
+          thumb_up
+        </span>{{likeCount}}</div>
+      <div class="card-count card-dislike"><span class="material-symbols-outlined">
+          thumb_down
+        </span>{{dislikeCount}}</div>
+      <div class="card-count card-comment"><span class="material-symbols-outlined">
+          forum
+        </span>{{commentCount}}</div>
+    </div>
+    <div class="card-title">
+      <h4 class="video-title">{{title}}</h4>
+    </div>
+    <div class="card-button">
+      <button
+       mat-raised-button color="primary"
+       class="card-button__more"
+       (click)="goToCardInfo()"
+       >more...</button>
+    </div>
+  </div>
+</div>

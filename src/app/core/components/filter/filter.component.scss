@@ -1,0 +1,39 @@
+@import '../../../../variables.scss';
+.filter {
+  background-color: $background-color-gray;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.filter-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.filter-wrapper,
+.filter-list {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.filter-list__name {
+  margin-right: 10px;
+}
+
+
+.filter-list__link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #2F80ED;
+  margin-right: 15px;
+}
+
+.filter-sort__input {
+  border: none;
+  padding: 5px;
+  width: 150px;
+}

@@ -1,0 +1,63 @@
+<header class="header">
+  <div class="header-wrapper">
+    <div class="search">
+      <img
+       class="search__logo"
+       src="../../../../assets/logo.svg"
+       alt="search"
+       (click)="goToHome()">
+
+      <div class="search__panel">
+        <input
+        class="header-search-input"
+        #headerInput
+        placeholder="What are you want to find out?"/>
+        <button
+         color="primary"
+         mat-raised-button
+         class="header-search-btn"
+         >search</button>
+        <button
+         color="primary"
+         mat-raised-button
+         class="header-setting-btn"
+         (click)="isFilterBlockVisible = !isFilterBlockVisible"
+         >
+         <span
+            class="material-symbols-outlined">
+            filter_list
+          </span>
+        </button>
+        <button
+        mat-raised-button
+        color ="primary"
+        (click)="goToCreateCard()">
+        Create card
+       </button>
+      </div>
+    </div>
+    <div class="user-icon">
+      <span
+      *ngIf="!!loginUserName"
+      class="user-icon__name">{{ loginUserName.name }}</span>
+      <button
+       class="user-icon__btn"
+       color="primary"
+       mat-button
+       (click)="goToLogin()"
+       >
+       <mat-icon>account_box</mat-icon>
+      </button>
+      <button
+      *ngIf="!!loginUserName"
+       class="user-icon__btn"
+       color="primary"
+       mat-button
+       (click)="exitUser()"
+       >Log out
+      </button>
+    </div>
+  </div>
+</header>
+<app-filter *ngIf="isFilterBlockVisible">
+</app-filter>

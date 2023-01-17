@@ -1,0 +1,46 @@
+@import '../../../../variables.scss';
+
+.login-wrapper {
+  background-color: $background-color-light-gray;
+  max-width: 50%;
+  margin: 85px auto 0 auto;
+  border-radius: 10px;
+}
+
+.login-title {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__section {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+
+    & label {
+      margin-bottom: 15px;
+      color: $color-text-gray;
+    }
+
+    & input {
+      border: none;
+      background-color: $background-input-color;
+    }
+  }
+}
+
+.login-buttons {
+  width: 170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}

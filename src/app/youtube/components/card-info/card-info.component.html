@@ -1,0 +1,39 @@
+<div class="card-wrapper">
+  <button mat-raised-button color="primary" class="back-button" (click)="goBack()">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+</button>
+  <div class="card-container" [appDateStatus]="item.snippet.publishedAt">
+    <div class="card-container-image">
+      <img [src]="item.snippet.thumbnails.maxres.url" class="card-img" alt="card-info">
+    </div>
+    <div class="card-container__info">
+      <div class="card-header">
+        <div class="card-info__title">
+          {{item.snippet.title}}
+        </div>
+        <div class="card-info__date">
+          {{item.snippet.publishedAt | date:'fullDate' }}
+        </div>
+      </div>
+      <div class="card-info__subtitle">Description</div>
+      <div class="card-container__description">
+        {{ item.snippet.description }}</div>
+      <div class="card-container-statistics">
+        <div class="card-count card-view">
+          <span class="material-symbols-outlined">
+            visibility
+          </span>{{item.statistics.viewCount}}
+        </div>
+        <div class="card-count card-like"><span class="material-symbols-outlined">
+            thumb_up
+          </span>{{item.statistics.likeCount}}</div>
+        <div class="card-count card-dislike"><span class="material-symbols-outlined">
+            thumb_down
+          </span>{{item.statistics.dislikeCount}}</div>
+        <div class="card-count card-comment"><span class="material-symbols-outlined">
+            forum
+          </span>{{item.statistics.commentCount}}</div>
+      </div>
+    </div>
+  </div>
+</div>

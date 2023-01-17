@@ -1,0 +1,38 @@
+@import '../../../../variables.scss';
+
+.admin-wrapper {
+  width: 433px;
+  height: 495px;
+  margin: 90px auto 0 auto;
+  padding: 25px;
+  background-color: $background-color-light-gray;
+  border-radius: 18px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 22.6439px;
+  line-height: 27px;
+}
+
+.admin-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: $color-text-gray;
+}
+
+.admin-input-container input {
+  border: none;
+  height: 35px;
+  padding: 5px;
+  background-color: $background-color-gray;
+}
+
+
+.admin-form-submit {
+  width: 188.7px;
+  height: 37.74px;
+  font-size: 15.0959px;
+  line-height: 18px;
+}

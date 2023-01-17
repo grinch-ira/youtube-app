@@ -1,0 +1,7 @@
+<div class="container">
+  <ul class="search-result">
+    <li *ngFor="let item of items | sortingCards:filterSettings">
+      <app-video-card [item]="item"></app-video-card>
+    </li>
+  </ul>
+</div>

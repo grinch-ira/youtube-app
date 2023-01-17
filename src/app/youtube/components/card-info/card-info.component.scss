@@ -1,0 +1,79 @@
+@import '../../../../variables.scss';
+
+.card-wrapper {
+  max-width: 85%;
+  margin: 50px auto 0 auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: $background-color-gray;
+  border-bottom: 10px solid;
+  border-radius: 10px;
+
+  &__info {
+    margin: 35px;
+  }
+
+  &-statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    max-width: 60%;
+  }
+
+  &-image {
+    width: 60%;
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+  }
+}
+
+.back-button{
+  position: relative;
+  top: 36px;
+  left: -64px;
+  border-radius: 5px 0 0 5px;
+}
+
+.card-img {
+width: 100%;
+height: 100%;
+}
+
+.card-container__info {
+  width: 40%;
+}
+
+.card-header {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.card-info {
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__date {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    color: #828282;
+  }
+}

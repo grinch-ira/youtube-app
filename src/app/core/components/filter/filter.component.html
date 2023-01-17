@@ -1,0 +1,21 @@
+<div class="filter">
+  <div class="filter-wrapper">
+    <ul class="filter-list">
+      <li class="filter-list__name">Sorting by</li>
+      <li
+       class="filter-list__link"
+       (click)="setFilter(filtersMap['date'])"
+       >date</li>
+      <li
+      class="filter-list__link"
+      (click)="setFilter(filtersMap['views'])"
+      >count of views</li>
+      <li class="filter-list__link" (click)="setKeyWord(input)">by word sentence</li>
+    </ul>
+    <input
+     type="text"
+     class="filter-sort__input"
+     #input
+     />
+  </div>
+</div>
